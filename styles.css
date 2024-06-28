@@ -29,12 +29,13 @@ body {
 h1 {
     font-size: 2em;
     margin: 10px 0;
+    color: #B7B597;
 }
 
 h2 {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #555;
+    color: #B7B597;
 }
 
 .social-icons a {
@@ -44,6 +45,7 @@ h2 {
 }
 
 .accordion {
+    text-alingn: centre;
     width: 100%;
     max-width: 600px;
     margin: 20px 0;
