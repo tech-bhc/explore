@@ -1,135 +1,139 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #1B262C, #0F4C75);
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1B262C, #0F4C75);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .logo img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1 {
-    font-size: 2em;
-    margin: 10px 0;
-    color: #B7B597;
+  font-size: 2em;
+  margin: 10px 0;
+  color: #B7B597;
 }
 
 h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #B7B597;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #B7B597;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: inherit;
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 2em; /* Increased icon size */
 }
 
 .accordion {
-    text-alingn: centre;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-item {
-    border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .accordion-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .accordion-header {
-    padding: 15px;
-    cursor: pointer;
-    background: #f7f7f7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1B262C; /* Dark color for accordion heading */
 }
 
 .accordion-content {
-    display: none;
-    padding: 15px;
-    background: #fff;
+  display: none;
+  padding: 15px;
+  background: #fff;
+  color: #0F4C75; /* Light color for accordion content */
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 grid items */
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .carousel img {
-    width: 100%;
-    display: none;
+  width: 100%;
+  display: none;
 }
 
 .carousel img.active {
-    display: block;
+  display: block;
 }
 
 .carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
 .carousel-controls div {
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .carousel-index {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .post-title {
-    margin-top: 10px;
-    font-weight: bold;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #B7B597; /* Same color as heading */
 }
