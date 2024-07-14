@@ -71,6 +71,21 @@ h2 {
   justify-content: space-between;
   align-items: center;
   color: #1B262C; /* Dark color for accordion heading */
+  position: relative; /* For arrow */
+}
+
+.accordion-header::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth rotation */
 }
 
 .accordion-content {
@@ -78,6 +93,17 @@ h2 {
   padding: 15px;
   background: #fff;
   color: #0F4C75; /* Light color for accordion content */
+  transition: max-height 0.3s ease-in-out; /* Add transition for smooth opening/closing */
+  overflow: hidden; /* Hide content that overflows */
+}
+
+.accordion-header.active::before {
+  transform: rotate(135deg); /* Rotate arrow when active */
+}
+
+.accordion-content.active {
+  display: block; /* Show content when active */
+  max-height: 500px; /* Adjust max-height for content */
 }
 
 .grid {
@@ -100,6 +126,7 @@ h2 {
 .carousel img {
   width: 100%;
   display: none;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition */
 }
 
 .carousel img.active {
@@ -136,4 +163,21 @@ h2 {
   margin-top: 10px;
   font-weight: bold;
   color: #B7B597; /* Same color as heading */
+}
+
+/* Carousel Animation */
+.carousel img.active {
+  transform: translateX(0);
+}
+
+.carousel img:nth-child(1) {
+  transform: translateX(100%);
+}
+
+.carousel img:nth-child(2) {
+  transform: translateX(200%);
+}
+
+.carousel img:nth-child(3) {
+  transform: translateX(300%);
 }
